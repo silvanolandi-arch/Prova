@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silvano Landi — Portfolio</title>
+  <meta name="description" content="Portfolio personale di Silvano Landi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="logo">SL</a>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav.about"></a></li>
+        <li><a href="#skills" data-i18n="nav.skills"></a></li>
+        <li><a href="#projects" data-i18n="nav.projects"></a></li>
+        <li><a href="#contact" data-i18n="nav.contact"></a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Lingua / Language">
+        <button type="button" data-lang="it">IT</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+      <h1>Silvano Landi</h1>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta1"></a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2"></a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 data-i18n="about.title"></h2>
+      <div class="about-grid">
+        <p data-i18n="about.p1"></p>
+        <p data-i18n="about.p2"></p>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2 data-i18n="skills.title"></h2>
+      <ul class="skills" id="skills-list"></ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2 data-i18n="projects.title"></h2>
+      <div class="projects" id="projects-list"></div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2 data-i18n="contact.title"></h2>
+      <p class="lead" data-i18n="contact.text"></p>
+      <div class="contact-links">
+        <a href="mailto:tua-email@esempio.it" class="btn btn-primary" data-i18n="contact.email"></a>
+        <a href="https://github.com/silvanolandi-arch" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Silvano Landi · <span data-i18n="footer"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

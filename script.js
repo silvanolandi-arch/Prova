@@ -1,34 +1,40 @@
 // ===== Contenuti del sito: modifica qui testi, competenze e progetti =====
 
-const SKILLS = ["HTML & CSS", "JavaScript", "Python", "Git", "UI Design", "Project Management"];
+const SKILLS = [
+  { it: "Budget e forecast", en: "Budgeting & forecasting" },
+  { it: "Analisi degli scostamenti", en: "Variance analysis" },
+  { it: "Contabilità analitica", en: "Cost accounting" },
+  { it: "Reporting direzionale", en: "Management reporting" },
+  { it: "KPI e cruscotti", en: "KPIs & dashboards" },
+  { it: "Analisi di marginalità", en: "Margin analysis" },
+  { it: "Excel avanzato", en: "Advanced Excel" },
+  { it: "Power BI", en: "Power BI" }
+];
 
 const PROJECTS = [
   {
-    title: { it: "Progetto Uno", en: "Project One" },
+    title: { it: "Budget e forecast", en: "Budgeting & forecasting" },
     desc: {
-      it: "Breve descrizione del progetto: obiettivo, il tuo ruolo e il risultato ottenuto.",
-      en: "Short project description: the goal, your role and the outcome."
+      it: "Costruisco il budget annuale con le funzioni aziendali e lo aggiorno con forecast periodici, così la direzione sa sempre dove l'anno sta andando a chiudere.",
+      en: "I build the annual budget together with each department and update it with regular forecasts, so management always knows where the year is heading."
     },
-    tags: ["JavaScript", "Design"],
-    link: "#"
+    tags: ["Budget", "Forecast", "Pianificazione"]
   },
   {
-    title: { it: "Progetto Due", en: "Project Two" },
+    title: { it: "Reporting e KPI", en: "Reporting & KPIs" },
     desc: {
-      it: "Un altro lavoro di cui vai fiero. Racconta cosa lo rende interessante.",
-      en: "Another piece of work you're proud of. Tell what makes it interesting."
+      it: "Preparo il reporting mensile per la direzione: conto economico gestionale, indicatori chiave e analisi degli scostamenti rispetto a budget e anno precedente.",
+      en: "I prepare monthly reporting for management: management P&L, key indicators and variance analysis against budget and prior year."
     },
-    tags: ["Python", "Data"],
-    link: "#"
+    tags: ["Report", "KPI", "Dashboard"]
   },
   {
-    title: { it: "Progetto Tre", en: "Project Three" },
+    title: { it: "Analisi di costi e margini", en: "Cost & margin analysis" },
     desc: {
-      it: "Spazio per un terzo progetto, una collaborazione o un'esperienza significativa.",
-      en: "Room for a third project, a collaboration or a meaningful experience."
+      it: "Analizzo costi e marginalità per prodotto, cliente e centro di costo, per capire dove l'azienda crea valore e dove intervenire.",
+      en: "I analyse costs and margins by product, customer and cost centre to show where the company creates value and where to act."
     },
-    tags: ["Web", "UX"],
-    link: "#"
+    tags: ["Costi", "Margini", "Centri di costo"]
   }
 ];
 
@@ -36,42 +42,42 @@ const I18N = {
   it: {
     "nav.about": "Chi sono",
     "nav.skills": "Competenze",
-    "nav.projects": "Progetti",
+    "nav.projects": "Cosa faccio",
     "nav.contact": "Contatti",
-    "hero.eyebrow": "Ciao, sono",
-    "hero.lead": "Una frase che ti descrive: cosa fai, cosa ti appassiona e come puoi aiutare chi visita il sito.",
-    "hero.cta1": "Guarda i progetti",
+    "hero.eyebrow": "Controller · Controllo di gestione",
+    "hero.lead": "Trasformo i numeri dell'azienda in informazioni utili per decidere: budget, analisi dei costi e reporting per la direzione.",
+    "hero.cta1": "Cosa faccio",
     "hero.cta2": "Contattami",
     "about.title": "Chi sono",
-    "about.p1": "Racconta qui il tuo percorso: da dove vieni, cosa hai studiato e come sei arrivato a fare ciò che fai oggi.",
-    "about.p2": "Aggiungi cosa ti interessa, i valori con cui lavori e cosa stai cercando in questo momento: nuove collaborazioni, opportunità o progetti.",
+    "about.p1": "Lavoro come controller nel controllo di gestione. Seguo il ciclo di pianificazione, dal budget ai forecast, e misuro l'andamento dell'azienda rispetto agli obiettivi.",
+    "about.p2": "Collaboro con la direzione e con le diverse funzioni aziendali per spiegare gli scostamenti, capire dove si formano costi e margini e supportare le decisioni con dati affidabili.",
     "skills.title": "Competenze",
-    "projects.title": "Progetti",
+    "projects.title": "Cosa faccio",
     "projects.link": "Scopri di più →",
-    "contact.title": "Lavoriamo insieme",
-    "contact.text": "Hai un'idea, una proposta o vuoi solo salutare? Scrivimi, ti risponderò al più presto.",
+    "contact.title": "Contatti",
+    "contact.text": "Vuoi confrontarti su budget, reporting o controllo di gestione? Scrivimi, ti risponderò al più presto.",
     "contact.email": "Scrivimi una email",
-    "footer": "Realizzato con cura"
+    "footer": "Controller · Controllo di gestione"
   },
   en: {
     "nav.about": "About",
     "nav.skills": "Skills",
-    "nav.projects": "Projects",
+    "nav.projects": "What I do",
     "nav.contact": "Contact",
-    "hero.eyebrow": "Hi, I'm",
-    "hero.lead": "A sentence that describes you: what you do, what you love and how you can help the people visiting this site.",
-    "hero.cta1": "See my work",
+    "hero.eyebrow": "Financial controller · Management control",
+    "hero.lead": "I turn the company's numbers into information people can act on: budgets, cost analysis and management reporting.",
+    "hero.cta1": "What I do",
     "hero.cta2": "Get in touch",
     "about.title": "About me",
-    "about.p1": "Tell your story here: where you come from, what you studied and how you got to do what you do today.",
-    "about.p2": "Add what you care about, the values you work by and what you're looking for right now: new collaborations, opportunities or projects.",
+    "about.p1": "I work as a controller in management control. I run the planning cycle, from budget to forecasts, and track how the company performs against its targets.",
+    "about.p2": "I work with management and with every department to explain variances, understand where costs and margins come from, and back decisions with reliable data.",
     "skills.title": "Skills",
-    "projects.title": "Projects",
+    "projects.title": "What I do",
     "projects.link": "Learn more →",
-    "contact.title": "Let's work together",
-    "contact.text": "Have an idea, a proposal or just want to say hi? Drop me a line and I'll get back to you soon.",
+    "contact.title": "Contact",
+    "contact.text": "Want to talk budgeting, reporting or management control? Drop me a line and I'll get back to you soon.",
     "contact.email": "Send me an email",
-    "footer": "Made with care"
+    "footer": "Financial controller · Management control"
   }
 };
 
@@ -85,12 +91,12 @@ function storeLang(lang) {
   try { localStorage.setItem("lang", lang); } catch { /* ignore */ }
 }
 
-function renderSkills() {
+function renderSkills(lang) {
   const list = document.getElementById("skills-list");
   list.innerHTML = "";
   for (const skill of SKILLS) {
     const li = document.createElement("li");
-    li.textContent = skill;
+    li.textContent = skill[lang];
     list.appendChild(li);
   }
 }
@@ -113,11 +119,13 @@ function renderProjects(lang) {
       span.textContent = t;
       tags.appendChild(span);
     }
-    const link = document.createElement("a");
-    link.href = p.link;
-    link.textContent = I18N[lang]["projects.link"];
-
-    card.append(h3, desc, tags, link);
+    card.append(h3, desc, tags);
+    if (p.link) {
+      const link = document.createElement("a");
+      link.href = p.link;
+      link.textContent = I18N[lang]["projects.link"];
+      card.append(link);
+    }
     container.appendChild(card);
   }
 }
@@ -132,6 +140,7 @@ function setLang(lang) {
     btn.classList.toggle("active", btn.dataset.lang === lang);
     btn.setAttribute("aria-pressed", btn.dataset.lang === lang);
   });
+  renderSkills(lang);
   renderProjects(lang);
   storeLang(lang);
 }
@@ -158,6 +167,5 @@ document.querySelectorAll(".lang-switch button").forEach(btn => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const browserLang = (navigator.language || "it").startsWith("it") ? "it" : "en";
-renderSkills();
 setLang(getStoredLang() || browserLang);
 setupReveal();
